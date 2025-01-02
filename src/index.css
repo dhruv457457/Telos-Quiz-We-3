@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Neon Text */
+/* Tailwind Custom Neon Effect (Add to your tailwind.config or external CSS) */
+.neon-text {
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(255, 105, 180, 0.5);
+  }
+  
+  .neon-link {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.7);
+  }
+  
+  .neon-button {
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.8), 0 0 15px rgba(255, 105, 180, 0.5);
+  }
+  
+  .neon-box {
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.8), 0 0 15px rgba(0, 255, 0, 0.7);
+  }
+  
+  .btn {
+    font-size: 1rem; /* Ensure appropriate font size */
+    line-height: 1.5; /* Set a comfortable line height */
+    word-wrap: break-word; /* Prevent long words from spilling over */
+  }
+  
