@@ -1,68 +1,28 @@
-# 🏦 Decentralized Fundraising Platform
+# Decentralized Voting Application
 
-### Flow Asia Hackathon 2024 Submission
+This is a demo application to implement voting in solidity smart contract using ReactJS. 
 
-**Smart Contract Address:** `0x81e611ad1F718D9a0090f94f9A3E36692D91b2de`
+[Youtube Tutorial](https://youtu.be/eCn6mHTpuM0)
 
-## 🚀 Project Overview
+## Installation
 
-The **Decentralized Fundraising Platform** is an innovative solution to enable transparent and trustless crowdfunding. Built on the **Flow Blockchain**, this platform allows users to create campaigns, contribute funds securely, and withdraw raised amounts seamlessly, leveraging smart contract technology to ensure transparency and automation.
+After you cloned the repository, you want to install the packages using
 
----
+```shell
+npm install
+```
 
-## 🌟 Features
+You first need to compile the contract and upload it to the blockchain network. Run the following commands to compile and upload the contract.
 
-- **Campaign Creation:** Users can create fundraising campaigns with a target amount, title, and description.
-- **Secure Contributions:** Donors can contribute funds to campaigns using Flow’s native currency.
-- **Transparent Fundraising:** All contributions are tracked on-chain, ensuring transparency.
-- **Fund Withdrawal:** Campaign creators can withdraw funds once the target amount is reached.
-- **Real-Time Campaign Monitoring:** Users can view the list of active campaigns, including their progress and status.
+```shell
+npx hardhat compile
+npx hardhat run --network volta scripts/deploy.js
+```
 
----
+Once the contract is uploaded to the blockchain, copy the contract address and copy it in the .env file. You can also use another blockchain by writing the blockchain's endpoint in hardhat-config.
 
-## 🔗 Deployed Contract
+Once you have pasted your private key and contract address in the .env file, simply run command
 
-| **Network** | **Contract Address**                     |
-|-------------|------------------------------------------|
-| Flow Testnet | `0x81e611ad1F718D9a0090f94f9A3E36692D91b2de` |
-
----
-
-## 📜 Smart Contract Details
-
-The core logic is implemented in the `Fundraising` smart contract, which manages:
-
-1. **Campaign Storage:** Keeps details of all campaigns created.
-2. **Contribution Tracking:** Maps contributors to their respective campaigns and donation amounts.
-3. **Fund Withdrawal Rules:** Ensures funds are only withdrawn once the target amount is met.
-
----
-
-## 🛠️ Tech Stack
-
-### Blockchain:
-- **Flow Blockchain**: Ensuring scalability, security, and developer-friendly tooling.
-
-### Frontend:
-- **React.js**: For building a dynamic and user-friendly interface.
-- **Tailwind CSS**: For sleek and modern styling.
-
-### Backend:
-- **Node.js**: For managing server-side operations and connecting the blockchain.
-- **Flow JS SDK**: For interacting with the Flow blockchain and deployed smart contracts.
-
----
-
-## 💻 Installation & Setup
-
-### Prerequisites
-- Node.js (v16+)
-- npm or Yarn
-- Flow CLI
-
-### Steps
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/dhruv457457/fundraising-platform.git
-   cd fundraising-platform
+```shell
+npm start
+```

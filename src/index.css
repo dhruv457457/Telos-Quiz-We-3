@@ -1,27 +1,82 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* Neon Text */
-/* Tailwind Custom Neon Effect (Add to your tailwind.config or external CSS) */
-.neon-text {
-    text-shadow: 0 0 10px rgba(255, 105, 180, 0.7), 0 0 20px rgba(255, 105, 180, 0.5);
-  }
-  
-  .neon-link {
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.7);
-  }
-  
-  .neon-button {
-    box-shadow: 0 0 5px rgba(255, 105, 180, 0.8), 0 0 15px rgba(255, 105, 180, 0.5);
-  }
-  
-  .neon-box {
-    box-shadow: 0 0 5px rgba(0, 255, 0, 0.8), 0 0 15px rgba(0, 255, 0, 0.7);
-  }
-  
-  .btn {
-    font-size: 1rem; /* Ensure appropriate font size */
-    line-height: 1.5; /* Set a comfortable line height */
-    word-wrap: break-word; /* Prevent long words from spilling over */
-  }
-  
+/* App-wide Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* Login Page */
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #007bff, #6c757d);
+  color: #fff;
+}
+
+.login-button {
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-button:hover {
+  background-color: #218838;
+}
+
+/* Connected View */
+.connected-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.connected-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #17a2b8;
+}
+
+.candidates-table {
+  width: 80%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.candidates-table th {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.candidates-table td {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Form Styles */
+input[type=number] {
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+input[type=number]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
