@@ -1,28 +1,32 @@
-# Decentralized Voting Application
+# Decentralized Voting DApp
 
-This is a demo application to implement voting in solidity smart contract using ReactJS. 
+This is a decentralized voting application (DApp) deployed on the **Telos testnet**. The DApp allows users to vote for their favorite candidates using the power of blockchain technology, ensuring transparency and immutability of the voting process.
 
-[Youtube Tutorial](https://youtu.be/eCn6mHTpuM0)
+## Features
+- Connects with MetaMask for secure wallet authentication.
+- Allows users to vote for candidates.
+- Displays candidate names and vote counts in real time.
+- Shows the remaining voting time.
+- Prevents users from voting multiple times.
 
-## Installation
+## Contract Address
+The DApp interacts with the smart contract deployed on the Telos testnet. You can view and interact with the contract at the following address:
 
-After you cloned the repository, you want to install the packages using
+**Contract Address:** [0x73C2DAdECf1bcd837A06D199A36364d2Fa87710Aa](https://explorer.testnet.telos.net/address/0x73C2DAdECf1bcd837A06D199A36364d2Fa87710Aa)
 
-```shell
-npm install
-```
+## Getting Started
 
-You first need to compile the contract and upload it to the blockchain network. Run the following commands to compile and upload the contract.
+Follow these steps to run the DApp locally or deploy it on your environment.
 
-```shell
-npx hardhat compile
-npx hardhat run --network volta scripts/deploy.js
-```
+### Prerequisites
 
-Once the contract is uploaded to the blockchain, copy the contract address and copy it in the .env file. You can also use another blockchain by writing the blockchain's endpoint in hardhat-config.
+- **Node.js** (v16 or higher)
+- **MetaMask** wallet extension installed in your browser
+- **Telos Testnet** account with testnet Telos (TLOS) tokens
 
-Once you have pasted your private key and contract address in the .env file, simply run command
+### Install Dependencies
 
-```shell
-npm start
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/voting-dapp.git
+   cd voting-dapp
