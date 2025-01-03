@@ -4,7 +4,7 @@ async function main() {
   // Start deployment, passing the candidate names and duration
   const Voting_ = await Voting.deploy(
     ["Dhruv Pancholi", "Rahul", "Modi", "Mamta"],  // List of candidate names
-    90  // Duration in minutes
+    1300  // Duration in minutes
   );
 
   console.log("Contract address:", Voting_.address);
